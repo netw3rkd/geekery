@@ -5,6 +5,7 @@
 # Author 	: 	Erik Dubois
 # Website 	: 	http://www.erikdubois.be
 ##################################################################################################################
+# Script modified by Bryan Lennon (netw3rkd.at.google)
 ##################################################################################################################
 #
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
@@ -53,21 +54,20 @@ git pull
 git add --all .
 
 # Give a comment to the commit if you want
-echo "####################################"
-echo "Write your commit comment!"
-echo "####################################"
+#echo "####################################"
+#echo "Write your commit comment!"
+#echo "####################################"
 
-read input
+#read input
 
 # Committing to the local repository with a message containing the time details and commit text
 curtime=$(date)
-git commit -m "Comment : $input on $curtime"
+git commit -m "Comment : auto-commit on $curtime"
 
 # Push the local files to github
 
 git push -u origin master
 
 
-echo "################################################################"
-echo "###################    Git Push Done      ######################"
-echo "################################################################"
+echo "All done!"
+
