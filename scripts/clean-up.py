@@ -1,10 +1,16 @@
 #! /usr/bin/env python3
-
+#
+# Check for and remove built-up temp files, caches, and empty folders.
+#
+############################################################
+###### MAKE SURE YOU KNOW WHAT THIS DOES or WILL DO!! ######
+############################################################
+#
 import os
 import sys
 import shutil
-
-
+#
+# Comment out stuff you want to keep!
 shittyfiles = [
     '~/.adobe',              # Flash crap
     '~/.macromedia',         # Flash crap
